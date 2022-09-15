@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+    <head>
+        <title>Dizajn</title>
+        <link rel="stylesheet" type="text/css" href="css/vgoles.css">
+        <!-- link za navigation icon -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="author" content="Viktor Goleš">
+        <meta name="title" content="Dizajn">
+        <meta name="description" content="Zadaca 1, 17.3.2021.">
+        <meta name="keywords" content="FOI, HTML, CSS, Dizajn">
+    </head>
+
+    <body id="body">
+        <header>
+            <div class="navbar">
+                <a href="index.php"><img id="logo" 
+                    src="materijali/logo.png" alt="logo" class="naslovnica"></a>
+
+                <a href="popis.php" class ="naslovnica" id="naslov">
+                    Dokumentacija
+                </a>
+            </div>
+        </header>
+
+    <div class="container">
+        <div class="zadatak" style="margin: 50px;">
+            <h1>Opis projektnog zadatka i rješenja</h1>
+                Bilo je potrebtno izraditi web aplikaciju koja služi za upravljanje benzinskom postajom i evidenciju potrošnje goriva. <br>
+                Jedna od ključnih funkcionalnosti je izrada uloga. Aplikacija treba funkcionirati uz pomoć phpmyadmina. <br>
+                Elementi koji se ocjenjuju su:<br>
+                <ul>
+                    <li>Registracija</li>
+                    <li>Prijava</li>
+                    <li>Rad sustava</li>
+                    <li>Funkcije koje može obavljati neregistrirani korisnik</li>
+                    <li>Funkcije koje može obavljati registrirani korisnik</li>
+                    <li>Funkcije koje može obavljati moderator</li>
+                    <li>Funkcije koje može obavljati moderator</li>
+                    <li>Posebne osobine</li>
+                    <li>Dokumentacija</li>
+                    <li>Dizajn</li>
+                    <li>Programski kod</li>
+                    <li>Prezentacija</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h1>ERA MODEL</h1>
+                <img src="materijali/era.png">
+                <br>
+                <br>
+                <h1>Popis i opis skripata i navigacijski dijagram</h1>
+                <ul>
+                    <li>baza.class.php - klasa koja nam omogucuje spajanje na bazu</li>
+                    <li>sesija.class.php - klasa koja nam omogucuje stvaranje sesije</li>
+                    <li>meni.php - Prikazuje navigaciju ovisno o ulozi</li>
+                    <li>dnevnik.php - tablica sa dnevnikom rada (tko je što radio u aplikaciji)</li>
+                    <li>statistika.php - tablica sa statistikom potrošnje goriva</li>
+                    <li>multimedija.php - Prikaz slika</li>
+                    <li>popis.php - popis benziskih postaja i mjesta, goriva te cijene goriva</li>
+                    <li>popis2.php  - popis prilagođen za registrirane korisnike (može se pretraživati koliko odabrana postaja ima mjesta)</li>
+                    <li>logout.php - završava sesiju i odlogirava nas</li>
+                    <li>blokirani.php - popis blokiranih ljudi, administrator može odblokirati željenog korisnika</li>
+                    <li>obrasci</li>
+                    <ul>
+                        <li>obrazac.php - obrazac za pregled/ažuriranje i dodavanje svojih vozila</li>
+                        <li>prijava.php - obrazac za prijavu</li>
+                        <li>gorivo.php - obrazac za pregled ažuriranje i kreiranje novog goriva</li>
+                        <li>potvrda.php - obrazac za potvrdu registracije</li>
+                        <li>lokacije.php - pregled ažuriranje i dodavanje novih lokacija</li>
+                        <li>passreset.php - generira se nova lozinka ako je korisnik zaboravio staru</li>
+                        <li>dodjela.php - moderator dodjeljuje gorivo mjestima na pumpi za koju je zadužen</li>
+                        <li>mjesta.php - moderator može dodavati nova mjesta na pumpu za koju je zadužen</li>
+                        <li>moderatori.php - administrator može dodjeljivati moderatore pumpama i brisati</li>
+                        <li>registracija.php - forma za registraciju novog korisnika</li>
+                        <li>pumpe.php - popis pumpi i dodjeljivanje lokacija pumpi</li>
+                    </ul>
+                    <li>materijali</li>
+                    <ul>
+                        <li>logo.png</li>
+                        <li>autor.jpg</li>
+                        <li>era.png</li>
+                        <li>auto1.png</li>
+                        <li>auto2.png</li>
+                        <li>auto3.png</li>
+                        <li>auto4.png</li>
+                        <li>auto5.png</li>
+                        <li>auto6.png</li>
+                    </ul>
+                    <li>css</li>
+                    <ul>
+                        <li>vgoles.css - služi za oblikovanje i dizajniranje web stranice</li>
+                    </ul>
+                    <li>js</li>
+                    <ul>
+                        <li>vgoles.js - sadrži javascript funkcije koje sam koristio</li>
+                    </ul>
+                    <li>jqurey</li>
+                    <ul>
+                        <li>dataTables.js - sadrži funkcije pomoću kojih se oblikuju tablice</li>
+                    </ul>
+                </ul>
+                <img src="materijali/navigacijski.png" width="80%" height="80%">
+                <br>
+                <br>
+                <h1>Popis i opis korištenih tehnologija i alata</h1>
+                <ul>
+                    <li>HTML - (HyperText Markup Language) Osnovni jezik za izradu web stranica</li>
+                    <li>CSS - Cascading Style Sheets) Stilski jezik za opis prezentacije dokumenta napisanog u HTML-u</li>
+                    <li>JavaScript - Skriptni s kojim određujemo ponašanje web stranice.</li>
+                    <li>jQuery - JavaScript biblioteka</li>
+                    <li>PHP - programski jezik kojim se programira na strani poslužitelja</li>
+                    <li>SQL - programski jezik koji za rad s bazama podataka</li>
+                    <li>phpmyadmin - alat za upravljanje i administraciju MySQL</li>
+                    <li>Sublime Text - editor u kojem se piše kod</li>
+                </ul>
+                <br>
+                <br>
+                <h1>Popis i opis korištenih tehnologija i alata</h1>
+                <ul>
+                    <li>DataTables - služi za oblikovanje tablica</li>
+                    <li>reCaptcha - vrsta testa kojim se testira je li korisnik čovjek ili računalo</li>
+                </ul>
+
+        </div>
+    </div>
+        <footer>
+
+            <div class="validator">
+                <a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2021%2Fzadaca_01%2Fvgoles%2Findex.php"> 
+                    <img alt="HTML5 logo" src="https://barka.foi.hr/WebDiP/2021/materijali/zadace/HTML5.png" width="50" />
+                </a>
+            </div>            
+
+            <p id="copyright">&copy; 2021 
+                <a href="mailto:viktor.goles@gmail.com" class="author">
+                Viktor Goleš
+                </a>
+            </p>
+
+            <div class="validator">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2021%2Fzadaca_01%2Fvgoles%2Findex.php&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"> 
+                    <img alt="CSS3 logo" src="http://barka.foi.hr/WebDiP/2021/materijali/zadace/CSS3.png" width="56" />
+                </a>
+            </div>
+
+        </footer>
+    </body>
+</html>
