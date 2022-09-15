@@ -5,12 +5,12 @@ class Baza {
     // const server = "localhost";
     // const korisnik = "root";
     // const lozinka = "";
-    // const baza = "WebDiP2021x028";
+    // const baza = "test";
 
     const server = "localhost";
-    const korisnik = "WebDiP2021x028";
-    const lozinka = "admin_JXse";
-    const baza = "WebDiP2021x028";
+    const korisnik = "vgoles";
+    const lozinka = "example";
+    const baza = "example";
 
 
     private $veza = null;
